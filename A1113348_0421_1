@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class A1113348_0421_1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("請輸入您的電子郵件:");
+        String email = sc.next();
+
+        if(email.matches("[a-z0-9]+@{1}[a-z]+[.]{1}[a-z]+")){
+            System.out.println("符合");
+        }
+        else{
+            System.out.println("不符合");
+        }
+
+    }
+}
