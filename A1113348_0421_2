@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class A1113348_0421_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("請輸入日期(西元年/月/日 or 月/日/西元年):");
+        String day = sc.next();
+
+        if(day.matches("[0-9]+[/]{1}[1-9]+[/]{1}[1-9]+")){
+            System.out.println(day);
+        }
+        else if(day.matches("[1-12]+[/]{1}[1-31]+[/]{1}[0-9]+")){
+            System.out.println(day);
+        }
+        else{
+            System.out.println("輸入格式錯誤");
+        }
+    }   
+}
